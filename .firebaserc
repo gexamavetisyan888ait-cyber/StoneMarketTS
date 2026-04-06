@@ -1,0 +1,15 @@
+{
+  "projects": {
+    "default": "stonemarket-gegh"
+  },
+  "targets": {
+    "stonemarket-7f764": {
+      "hosting": {
+        "main-site": [
+          "stonemarket-shop"
+        ]
+      }
+    }
+  },
+  "etags": {}
+}
