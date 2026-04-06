@@ -3,18 +3,18 @@ import './App.css'
 import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import { ref, onValue } from "firebase/database";
 import { onAuthStateChanged } from "firebase/auth";
-import { db, auth } from "./lib/firebase.js";
+import { db, auth } from "./lib/firebase.ts";
 import { X } from "lucide-react";
 
-import Home from './pages/Home';
-import Shop from './pages/Shop';
-import Contact from './pages/Contact';
-import Designers from './pages/Designers';
-import About from './pages/About';
-import Chat from './pages/Chat';
-import Favorites from './pages/Favorites'
-import Liking from './pages/Liking'
-import CardInfo from './pages/CardInfo1';
+import Home from './pages/Home.tsx';
+import Shop from './pages/Shop.tsx';
+import Contact from './pages/Contact.tsx';
+import Designers from './pages/Designers.tsx';
+import About from './pages/About.tsx';
+import Chat from './pages/Chat.tsx';
+import Favorites from './pages/Favorites.tsx'
+import Liking from './pages/Liking.tsx'
+import CardInfo from './pages/CardInfo1.tsx';
 
 function NotificationWrapper() {
   const [user, setUser] = useState(null);

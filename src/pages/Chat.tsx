@@ -1,7 +1,7 @@
 import React from 'react'
-import Header from '../Components/Header/Header'
+import Header from '../Components/Header/Header.tsx'
 // import Footer from '../Components/Footer/Footer'
-import Chat from '../Components/Chat/Chat'
+import Chat from '../Components/Chat/Chat.tsx'
 export default function designers() {
   return (
     <>

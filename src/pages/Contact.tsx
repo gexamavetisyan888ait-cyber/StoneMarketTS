@@ -1,7 +1,7 @@
 import React from 'react'
-import Header from '../Components/Header/Header'
-import Footer from '../Components/Footer/Footer'
-import Contacts from '../Components/Contacts/Contacts'
+import Header from '../Components/Header/Header.tsx'
+import Footer from '../Components/Footer/Footer.tsx'
+import Contacts from '../Components/Contacts/Contacts.tsx'
 export default function Contact() {
     return (
         <>

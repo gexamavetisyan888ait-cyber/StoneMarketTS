@@ -1,7 +1,7 @@
 import React from 'react'
-import Header from '../Components/Header/Header'
-import Footer from '../Components/Footer/Footer'
-import Favorite from '../Components/Favorites/Favorites'
+import Header from '../Components/Header/Header.tsx'
+import Footer from '../Components/Footer/Footer.tsx'
+import Favorite from '../Components/Favorites/Favorites.tsx'
 export default function Favorites() {
   return (
     <div>
