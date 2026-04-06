@@ -2,11 +2,10 @@ import React from "react";
 import { useRealtimeCollection } from "../../lib/hook";
 import CompanyCard from "./Companycard";
 import SkeletonCard from "./SkeletonCard";
-import { Company } from "./types";
 
 export default function Designers() {
     // Հուկին ասում ենք, որ սպասում ենք Company տիպի զանգված
-    const { data: companies, loading, error } = useRealtimeCollection<Company>("db/designers");
+    const { data: companies, loading, error } = useRealtimeCollection<any>("db/designers");
 
     return (
         <div className="bg-gray-50 min-h-screen py-12 px-4 md:px-12">

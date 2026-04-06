@@ -1,10 +1,10 @@
 import React from 'react';
-import { useStore, Product } from "../../store/useStore"; // Ներմուծիր Product տիպը
-import ProductCards from '../Shop/ProductCards';
+import { useStore, } from "../../store/useStore"; // Ներմուծիր Product տիպը
+// import ProductCards from '../Shop/ProductCards';
 
 export default function Favorite() {
   // TypeScript-ը հիմա գիտի state-ի տիպը, քանի որ useStore-ը սահմանված է <CartState> Generic-ով
-  const myCart = useStore((state) => state.cart);
+  // const myCart = useStore((state) => state.cart);
 
   return (
     <div className="bg-[#f8f9fa] md:px-20 py-4 font-sans">
@@ -14,13 +14,7 @@ export default function Favorite() {
         </div>
 
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
-          {myCart.length > 0 ? (
-            myCart.map((product: Product) => (
-              <ProductCards key={product.id} item={product} />
-            ))
-          ) : (
-            <p className="text-gray-500">Զամբյուղը դատարկ է</p>
-          )}
+          
         </div>
       </div>
     </div>

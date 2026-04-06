@@ -1,11 +1,8 @@
 import React from 'react';
-import { Designer } from './types'; // ենթադրենք տիպը այստեղ է
 
-interface DesignerCardProps {
-  designer: Designer;
-}
 
-const DesignerCard: React.FC<DesignerCardProps> = ({ designer }) => (
+
+const DesignerCard: React.FC<any> = ({ designer }) => (
   <div className="group bg-white rounded-xl shadow-sm hover:shadow-md transition-all duration-300 p-3 sm:p-4 flex flex-col cursor-pointer border border-gray-100 h-full">
     <div className="w-full aspect-[16/10] bg-gray-50 rounded-lg overflow-hidden mb-3 sm:mb-4 border border-gray-50">
       <img 

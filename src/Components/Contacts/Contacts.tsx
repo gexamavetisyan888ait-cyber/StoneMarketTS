@@ -1,5 +1,5 @@
 import React from 'react';
-import { Phone, Mail, Instagram, Facebook, MessageCircle } from 'lucide-react';
+import { Phone, Mail, MessageCircle } from 'lucide-react';
 import { useRealtimeCollection } from "../../lib/hook"; 
 
 /** * 1. Սահմանում ենք iconMap-ը որպես հաստատուն:
@@ -8,8 +8,6 @@ import { useRealtimeCollection } from "../../lib/hook";
 const iconMap: Record<string, React.ReactElement> = {
   Phone: <Phone className="w-8 h-8 text-[#62d4a0]" />,
   Mail: <Mail className="w-8 h-8 text-[#62d4a0]" />,
-  Instagram: <Instagram className="w-8 h-8 text-[#62d4a0]" />,
-  Facebook: <Facebook className="w-8 h-8 text-[#62d4a0]" />,
   MessageCircle: <MessageCircle className="w-8 h-8 text-[#62d4a0]" />,
 };
 

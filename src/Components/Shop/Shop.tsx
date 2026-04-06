@@ -1,10 +1,9 @@
 import React from 'react';
 import { useRealtimeCollection } from "../../lib/hook";
-import ProductCard from "./ProductCards";
-import { Product } from "../../store/useStore";
+import ProductCard from "./ProductCard";
 
 export default function StoneMarketGrid() {
-  const { data: products, loading, error } = useRealtimeCollection<Product>("db/shop");
+  const { data: products, loading, error } = useRealtimeCollection<any>("db/shop");
 
   if (error) return <div className="py-20 text-center text-red-500">Սխալ տվյալների բեռնման ժամանակ: {error}</div>;
 
@@ -16,14 +15,7 @@ export default function StoneMarketGrid() {
         </div>
 
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
-          {loading 
-            ? Array.from({ length: 8 }).map((_, i) => (
-                <div key={i} className="h-64 bg-gray-200 animate-pulse rounded-2xl" />
-              ))
-            : products.map(product => (
-                <ProductCard key={product.id} item={product} />
-              ))
-          }
+          
         </div>
         
         {!loading && products.length === 0 && (

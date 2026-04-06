@@ -1,7 +1,7 @@
 import React from 'react';
 import { useFavorite } from "../../store/useStore";
-import ProductCards from '../Shop/ProductCards';
-import { Product } from '../../store/useStore'; // Ներմուծում ենք տիպը
+// import ProductCards from '../Shop/ProductCards';
+// import { Product } from '../../store/useStore'; // Ներմուծում ենք տիպը
 
 export default function Favorite() {
   // Եթե useFavorite-ը ճիշտ տիպավորված է create<FavoriteState>()-ով,
@@ -19,15 +19,7 @@ export default function Favorite() {
         </div>
 
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
-          {myCart && myCart.length > 0 ? (
-            myCart.map((product: Product) => (
-              <ProductCards key={product.id} item={product} />
-            ))
-          ) : (
-            <div className="col-span-full py-20 text-center">
-               <p className="text-gray-500 text-lg">Զամբյուղը դատարկ է</p>
-            </div>
-          )}
+          
         </div>
       </div>
     </div>

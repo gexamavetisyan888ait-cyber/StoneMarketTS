@@ -2,7 +2,7 @@ import { create } from 'zustand';
 import { persist } from 'zustand/middleware';
 
 // 1. Սահմանում ենք ապրանքի տիպը
-interface Product {
+export interface Product {
   id: string;
   title: string;
   img: string;

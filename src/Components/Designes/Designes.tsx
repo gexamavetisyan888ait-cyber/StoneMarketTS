@@ -1,11 +1,10 @@
 import React from 'react';
 import { useRealtimeCollection } from "../../lib/hook";
-import DesignerCard from "./Designercard";
-import { Designer } from "./types";
+import DesignerCard from "./Deignercard";
 
 export default function DesignersSection() {
   // Հուկին փոխանցում ենք Designer տիպը
-  const { data: designers, loading, error } = useRealtimeCollection<Designer>("db/designes");
+  const { data: designers, loading, error } = useRealtimeCollection<any>("db/designes");
 
   return (
     <div className="bg-[#f3f4f6] py-8 sm:py-12 px-4 sm:px-6 font-sans">

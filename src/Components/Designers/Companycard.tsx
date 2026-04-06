@@ -1,11 +1,8 @@
 import React from 'react';
-import { Company } from '../../types'; // Ուղղիր ճանապարհը ըստ քո թղթապանակի
 
-interface CompanyCardProps {
-    company: Company;
-}
 
-const CompanyCard: React.FC<CompanyCardProps> = ({ company }) => {
+
+const CompanyCard: React.FC<any> = ({ company }) => {
     return (
         <div className="bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden flex flex-col h-full">
             <div className="w-full h-48 bg-gray-100 flex items-center justify-center overflow-hidden">
